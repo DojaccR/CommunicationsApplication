@@ -1,4 +1,12 @@
-import java.swing*;
+/*
+	This is the GUI class, faily self explainatory, houses code for writing to client's screens.
+	This class fetches information from the client/Client to display.
+*/
+
+package client;
+import javax.swing.*;
+
+import javax.swing.*;
 
 public class GUI{
 	

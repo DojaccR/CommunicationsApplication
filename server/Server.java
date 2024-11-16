@@ -1,3 +1,9 @@
+/*
+	This is the server.
+*/
+
+package server;
+
 import java.net.*;
 import java.io.*;
 
