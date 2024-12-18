@@ -4,7 +4,9 @@
 
 package server;
 
-public class Client{
-    public Client(){}
+public class Client extends Thread{
+    public Client(Socket s){
+
+    }
 
 }
