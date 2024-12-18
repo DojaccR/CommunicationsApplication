@@ -1,5 +1,8 @@
 /*
 	This class is the interface between the server application and database.
+	The database for this project will be a collection of text files. This decision is due to the fact that
+	I am not certain what the eventual structure of tha data will be and I don't want to add dependencies by using
+	a NoSQL database. Text files are simple to use and quite robust when some safety precautions are taken.
 */
 
 package server;
@@ -38,10 +41,10 @@ public class FileManager{
 		return null;
 	}
 
-	public boolean createChat(int[] UserID){
+	public boolean createChat(int[] userID){
 		/**
 		 * Method to create a data block for a new chat
-		 * @param	UserID	Array of users who will be in the new chat
+		 * @param	userID	Array of users who will be in the new chat
 		 * @return	boolean signifying successful creation
 		 */
 		return false;
@@ -52,6 +55,17 @@ public class FileManager{
 		 * Method to delete a given chat
 		 * @param	chatID	Unique ID of a chat
 		 * @return	boolean signifying successful deletion
+		 */
+		return false;
+	}
+
+	public boolean writeToChat(int chatID, int userID, String message){
+		/**
+		 * Method to write a message to a chat i.e. append message to datatbase
+		 * @param	chatID	Unique ID of a chat
+		 * @param	userID	Unique ID of a user
+		 * @param	message	String containing the message to be appended
+		 * @return	boolean signifying successful write
 		 */
 		return false;
 	}
